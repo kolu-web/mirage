@@ -1,0 +1,101 @@
+.headtitle{
+    background-color:var(--heatprimary-color);
+    color: var(--headsecondory-color);
+}
+.logo{
+font-family:math;
+}
+
+#theme {
+  cursor: pointer;  
+}
+ :root{
+    --primary-color:rgb(255, 255, 255);
+    --secondory-color:rgb(19, 18, 18);
+    --heatprimary-color:black;
+    --headsecondory-color:white; 
+    --buttonprimary-color: rgb(25, 75, 109);
+    --buttonsecondory-color:rgb(255, 255, 255);
+  
+ }
+ .darkmode{
+    --primary-color:rgb(19, 18, 18);
+    --secondory-color:rgba(226, 226, 226, 0.822);
+    --heatprimary-color:rgb(255, 255, 255);
+    --headsecondory-color:rgb(0, 0, 0);
+    --buttonprimary-color: rgba(38, 157, 204, 0.856);
+    --buttonsecondory-color:rgb(255, 255, 255) ;
+ }
+ .full{
+    background-color: var(--secondory-color);
+    color: var(--primary-color);
+}
+.info{
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: absolute;
+   z-index: 3;
+   display: flex;
+   flex-direction: column;
+   opacity: 0;
+   transition: 0.6s;
+}
+.imagelan{
+   width: 300px;
+   height: 200px;
+}
+.imagepor{
+   width: 200px;
+   height: 300px;
+   
+}
+.image{
+   margin-top: 2rem;
+   margin-left: 3rem;
+   position:relative;
+   display: flex;
+   align-items: flex-end;
+   box-shadow: 0px 7px 10px rgba(0, 0, 0,0.5);
+   transition: 0.5s ease-in-out;
+}
+.image:hover{
+   transform: translateY(1rem);
+}
+.image:hover::before{
+   transform: translateX(40px);
+}
+.image::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;width: 100%;
+   height: 100%;
+   background:linear-gradient(to bottom,rgba(99, 99, 99, 0.562),rgba(59, 59, 59, 0.356)) ;
+   transition: .3s all;
+   opacity: 0;
+}
+.image:hover:before{
+opacity: 10;
+}
+.imgin{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+
+}
+
+.download_btn {
+width: 10px;
+height: 20px;
+margin-left:103%;
+margin-top: 10%;
+}
+.info:hover{
+   opacity: 100%;
+}
